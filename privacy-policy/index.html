@@ -13,265 +13,185 @@
 
 <body>
 
-    <!-- HEADER HERO BANNER -->
-    <header class="hero-banner">
-        <div class="container hero-content">
-            <img src="../assets/images/logo_blue.png" alt="My Library Desk Logo" class="hero-logo">
-            <div class="hero-text">
-                <h1>My Library Desk (Privacy Policy)</h1>
-                <p class="hero-sub">We value your privacy. This policy explains exactly what information the My Library
-                    Desk
-                    mobile application collects, stores, and processes.</p>
-            </div>
+    <!-- MINIMAL HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="../assets/images/logo_blue.png" alt="My Library Desk Logo" class="logo-img">
+                <span class="logo-text">My Library Desk</span>
+            </a>
+            <span class="header-tag">Privacy &amp; Terms</span>
         </div>
     </header>
 
-    <!-- CONTENT -->
+    <!-- MAIN WRAPPER -->
     <main class="main-content">
-        <div class="container policy-wrap">
+        <div class="container main-layout">
+            
+            <!-- STICKY SIDEBAR -->
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#overview" class="active">Overview</a></li>
+                        <li><a href="#collect">1. Information We Collect</a></li>
+                        <li><a href="#use">2. How We Use Information</a></li>
+                        <li><a href="#storage">3. Data Storage &amp; Security</a></li>
+                        <li><a href="#sharing">4. Sharing of Information</a></li>
+                        <li><a href="#rights">5. Your Rights</a></li>
+                        <li><a href="#children">6. Children's Privacy</a></li>
+                        <li><a href="#changes">7. Changes to This Policy</a></li>
+                        <li><a href="#contact">8. Contact Us</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-            <!-- INTRO -->
-            <div class="intro-card">
-                <p>This Privacy Policy applies to the <strong>My Library Desk</strong> mobile application ("App")
-                    developed for library management. By registering or using the App, the library administrator and its
-                    members agree to the collection, storage, and processing of information as described below. We only
-                    collect data that
-                    is strictly required to operate, optimize, and manage the daily activities of the library. If you do
-                    not agree with any terms of this policy, please do not download, install, or register with the App.
-                </p>
-            </div>
+            <!-- ARTICLE CONTENT -->
+            <article class="content-area">
+                <section id="overview" class="policy-section-doc">
+                    <h1>Privacy Policy</h1>
+                    <p class="last-updated">Last updated: July 1, 2025</p>
+                    <p>This Privacy Policy applies to the <strong>My Library Desk</strong> mobile application ("App") developed for library management. By registering or using the App, the library administrator and its members agree to the collection, storage, and processing of information as described below. We only collect data that is strictly required to operate, optimize, and manage the daily activities of the library. If you do not agree with any terms of this policy, please do not download, install, or register with the App.</p>
+                </section>
 
-            <!-- SECTION 1: DATA WE COLLECT -->
-            <section class="policy-section" id="collect">
-                <h2><span class="sec-num">1</span> Information We Collect</h2>
-                <p>The App collects only the database records that are necessary to operate the library management
-                    platform. This includes information self-submitted by members, manually input by library
-                    administrators, or generated during seat and locker assignments:</p>
-
-                <div class="collect-list">
-
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">🏛️</span>
-                            <span class="collect-label">Library</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Name</span>
-                            <span class="chip">Address</span>
-                            <span class="chip">Pin Code</span>
-                            <span class="chip">District</span>
-                            <span class="chip">Total Seats</span>
-                            <span class="chip">Total Lockers</span>
-                        </div>
+                <!-- SECTION 1 -->
+                <section id="collect" class="policy-section-doc">
+                    <h2>1. Information We Collect</h2>
+                    <p>The App collects only the database records that are necessary to operate the library management platform. This includes information self-submitted by members, manually input by library administrators, or generated during seat and locker assignments:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Collected Information Fields</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="category-name">Library</td>
+                                    <td>Name, Address, Pin Code, District, Total Seats, Total Lockers</td>
+                                </tr>
+                                <tr>
+                                    <td class="category-name">Administrator</td>
+                                    <td>Full Name, Mobile Number, Gender, Password <em>(encrypted)</em>, Created Date</td>
+                                </tr>
+                                <tr>
+                                    <td class="category-name">Member</td>
+                                    <td>Full Name, Father's Name, Mother's Name, Date of Birth, Gender, Mobile Number, Email, ID Proof Type &amp; Number, Address / District, Active Status, Enrollment Date</td>
+                                </tr>
+                                <tr>
+                                    <td class="category-name">Shift</td>
+                                    <td>Shift Name, Start Time, End Time, Monthly Price, Per Day Price, Additional Notes</td>
+                                </tr>
+                                <tr>
+                                    <td class="category-name">Seat &amp; Locker</td>
+                                    <td>Member Assigned, Seat Number, Locker Number, Assigned Shift, Assignment Date, Status</td>
+                                </tr>
+                                <tr>
+                                    <td class="category-name">Payment</td>
+                                    <td>Amount, Payment Date, Payment Mode, Transaction ID, Due Amount, Status, Membership Period</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </section>
 
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">🔐</span>
-                            <span class="collect-label">Administrator</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Full Name</span>
-                            <span class="chip">Mobile Number</span>
-                            <span class="chip">Gender</span>
-                            <span class="chip">Password <em>(encrypted)</em></span>
-                            <span class="chip">Created Date</span>
-                        </div>
+                <!-- SECTION 2 -->
+                <section id="use" class="policy-section-doc">
+                    <h2>2. How We Use Your Information</h2>
+                    <p>All collected data is processed and used exclusively to facilitate, optimize, and maintain smooth operations within the library management system. We do not use this data for profiling or advertising. Specifically, we use the information to:</p>
+                    <ul class="clean-list">
+                        <li>Register and manage the library, its administrator account, and settings</li>
+                        <li>Add, update, and manage member profiles with identity verification</li>
+                        <li>Create and configure library shifts with pricing and timings</li>
+                        <li>Assign seats and lockers to members and track availability</li>
+                        <li>Record, display, and manage payment and subscription transactions</li>
+                        <li>Track member active/inactive status and enrollment history</li>
+                        <li>Generate internal reports for the library administrator</li>
+                        <li>Send payment due reminders and membership expiry alerts</li>
+                    </ul>
+                    <p class="muted-note">Processing these records helps ensure transparency in financial transactions, prevent locker booking conflicts, and manage seat configurations in real-time.</p>
+                </section>
+
+                <!-- SECTION 3 -->
+                <section id="storage" class="policy-section-doc">
+                    <h2>3. Data Storage &amp; Security</h2>
+                    <p>Your data is hosted and stored on secure cloud database servers. We enforce strict administrative and technical measures designed to protect database records from loss, theft, alteration, disclosure, or unauthorized access in transit and at rest.</p>
+                    <p>To ensure security, we employ standard protocols including:</p>
+                    <ul class="clean-list">
+                        <li>Encrypted passwords</li>
+                        <li>Secure API endpoints (HTTPS)</li>
+                        <li>Token-based authentication</li>
+                        <li>Server-side validation</li>
+                    </ul>
+                    <div class="note-callout">
+                        <strong>Data Retention &amp; Deletion:</strong> All member profiles, transaction logs, seat allocations, and shift records are preserved only for the duration of your active library registration. Library administrators can request complete, irreversible database erasure at any time, which we will execute within standard operational timelines.
                     </div>
+                </section>
 
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">👤</span>
-                            <span class="collect-label">Member</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Full Name</span>
-                            <span class="chip">Father's Name</span>
-                            <span class="chip">Mother's Name</span>
-                            <span class="chip">Date of Birth</span>
-                            <span class="chip">Gender</span>
-                            <span class="chip">Mobile Number</span>
-                            <span class="chip">Email</span>
-                            <span class="chip">ID Proof Type &amp; Number</span>
-                            <span class="chip">Address / District</span>
-                            <span class="chip">Active Status</span>
-                            <span class="chip">Enrollment Date</span>
-                        </div>
-                    </div>
+                <!-- SECTION 4 -->
+                <section id="sharing" class="policy-section-doc">
+                    <h2>4. Sharing of Information</h2>
+                    <p>We value your trust and maintain strict data boundaries. We do <strong>not</strong> sell, rent, lease, or share your personal database profiles, contact records, or transaction histories with third-party advertising companies or target marketing platforms. Access to your information is strictly limited to the following scenarios:</p>
+                    <ul class="clean-list">
+                        <li>By the authorized library administrator through the App</li>
+                        <li>When required by applicable law or a valid court order</li>
+                        <li>To prevent fraud or protect the security of the App</li>
+                    </ul>
+                </section>
 
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">🕐</span>
-                            <span class="collect-label">Shift</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Shift Name</span>
-                            <span class="chip">Start Time</span>
-                            <span class="chip">End Time</span>
-                            <span class="chip">Monthly Price</span>
-                            <span class="chip">Per Day Price</span>
-                            <span class="chip">Additional Notes</span>
-                        </div>
-                    </div>
+                <!-- SECTION 5 -->
+                <section id="rights" class="policy-section-doc">
+                    <h2>5. Your Rights</h2>
+                    <p>We believe in giving you complete control over your personal records. Depending on your local jurisdiction and system role, you hold the following rights regarding the database profiles associated with your account:</p>
+                    <ul class="clean-list">
+                        <li><strong>View your data:</strong> Access the information stored in your profile at any time.</li>
+                        <li><strong>Update information:</strong> Correct or modify any inaccurate or outdated information.</li>
+                        <li><strong>Request deletion:</strong> Ask for your data to be purged from the databases.</li>
+                        <li><strong>Export records:</strong> Retrieve a copy of your records for external use.</li>
+                        <li><strong>Withdraw consent:</strong> Terminate further processing of your records.</li>
+                    </ul>
+                    <p>To submit a request regarding these rights, library members should contact their respective library administrator directly. If you are an administrator, you may email us directly using the contact methods below, and we will process your query within standard verification timelines.</p>
+                </section>
 
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">💺</span>
-                            <span class="collect-label">Seat &amp; Locker</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Member Assigned</span>
-                            <span class="chip">Seat Number</span>
-                            <span class="chip">Locker Number</span>
-                            <span class="chip">Assigned Shift</span>
-                            <span class="chip">Assignment Date</span>
-                            <span class="chip">Status</span>
-                        </div>
-                    </div>
+                <!-- SECTION 6 -->
+                <section id="children" class="policy-section-doc">
+                    <h2>6. Children's Privacy</h2>
+                    <p>My Library Desk is designed and intended for use by students, library visitors, and workspace subscribers. It is not directed at children under the age of <strong>13</strong>. We do not intentionally or knowingly collect, store, or solicit personal information from minors. If you are a parent or guardian and believe that a child has submitted personal details to the App, please reach out to us immediately, and we will take swift action to purge such records from our databases.</p>
+                </section>
 
-                    <div class="collect-row">
-                        <div class="collect-left">
-                            <span class="collect-icon">💳</span>
-                            <span class="collect-label">Payment</span>
-                        </div>
-                        <div class="collect-chips">
-                            <span class="chip">Amount</span>
-                            <span class="chip">Payment Date</span>
-                            <span class="chip">Payment Mode</span>
-                            <span class="chip">Transaction ID</span>
-                            <span class="chip">Due Amount</span>
-                            <span class="chip">Status</span>
-                            <span class="chip">Membership Period</span>
-                        </div>
-                    </div>
+                <!-- SECTION 7 -->
+                <section id="changes" class="policy-section-doc">
+                    <h2>7. Changes to This Policy</h2>
+                    <p>We reserve the right to revise or update this Privacy Policy at any time to reflect software changes, security enhancements, or legal standards. Whenever updates occur, we will post the revised document on this page and refresh the effective date at the top of the policy. We recommend that administrators and members review this page periodically to stay informed about how we safeguard information. Your continued use of the App following the publication of changes signifies your acknowledgment and acceptance of the revised clauses.</p>
+                </section>
 
-                </div>
-            </section>
-
-
-            <!-- SECTION 2: HOW WE USE -->
-
-            <section class="policy-section" id="use">
-                <h2><span class="sec-num">2</span> How We Use Your Information</h2>
-                <p>All collected data is processed and used exclusively to facilitate, optimize, and maintain smooth
-                    operations within the library management system. We do not use this data for profiling or
-                    advertising. Specifically, we use the information to:</p>
-                <ul class="use-list">
-                    <li>Register and manage the library, its administrator account, and settings</li>
-                    <li>Add, update, and manage member profiles with identity verification</li>
-                    <li>Create and configure library shifts with pricing and timings</li>
-                    <li>Assign seats and lockers to members and track availability</li>
-                    <li>Record, display, and manage payment and subscription transactions</li>
-                    <li>Track member active/inactive status and enrollment history</li>
-                    <li>Generate internal reports for the library administrator</li>
-                    <li>Send payment due reminders and membership expiry alerts</li>
-                </ul>
-                <p style="margin-top: 14px; font-size: 13.5px; color: var(--text-muted);">Processing these records helps
-                    ensure transparency in financial transactions, prevent locker booking conflicts, and manage seat
-                    configurations in real-time.</p>
-            </section>
-
-            <!-- SECTION 3: DATA STORAGE -->
-            <section class="policy-section" id="storage">
-                <h2><span class="sec-num">3</span> Data Storage &amp; Security</h2>
-                <p>Your data is hosted and stored on secure cloud database servers. We enforce strict administrative and
-                    technical measures designed to protect database records from loss, theft, alteration, disclosure, or
-                    unauthorized access in transit and at rest.</p>
-                <div class="security-row">
-                    <div class="sec-badge">🔒 Encrypted Passwords</div>
-                    <div class="sec-badge">🛡️ Secure API (HTTPS)</div>
-                    <div class="sec-badge">🔑 Token-Based Auth</div>
-                    <div class="sec-badge">📦 Server-Side Validation</div>
-                </div>
-                <div class="info-box">
-                    <strong>Data Retention &amp; Deletion:</strong> All member profiles, transaction logs, seat
-                    allocations, and shift records are preserved only for the duration of your active library
-                    registration. Library administrators can request complete, irreversible database erasure at any
-                    time, which we will execute within standard operational timelines.
-                </div>
-            </section>
-
-            <!-- SECTION 4: SHARING -->
-            <section class="policy-section" id="sharing">
-                <h2><span class="sec-num">4</span> Sharing of Information</h2>
-                <p>We value your trust and maintain strict data boundaries. We do <strong>not</strong> sell, rent,
-                    lease, or share your personal database profiles, contact records, or transaction histories with
-                    third-party advertising companies or target marketing platforms. Access to your information is
-                    strictly limited to the following scenarios:</p>
-                <ul class="use-list">
-                    <li>By the authorized library administrator through the App</li>
-                    <li>When required by applicable law or a valid court order</li>
-                    <li>To prevent fraud or protect the security of the App</li>
-                </ul>
-            </section>
-
-            <!-- SECTION 5: YOUR RIGHTS -->
-            <section class="policy-section" id="rights">
-                <h2><span class="sec-num">5</span> Your Rights</h2>
-                <p>We believe in giving you complete control over your personal records. Depending on your local
-                    jurisdiction and system role, you hold the following rights regarding the database profiles
-                    associated with your account:</p>
-                <div class="rights-row">
-                    <div class="right-pill">📋 View your data</div>
-                    <div class="right-pill">✏️ Update information</div>
-                    <div class="right-pill">🗑️ Request deletion</div>
-                    <div class="right-pill">📤 Export records</div>
-                    <div class="right-pill">🚫 Withdraw consent</div>
-                </div>
-                <p class="rights-note">To submit a request regarding these rights, library members should contact their
-                    respective library administrator directly. If you are an administrator, you may email us directly
-                    using the contact methods below, and we will process your query within standard verification
-                    timelines.</p>
-            </section>
-
-            <!-- SECTION 6: CHILDREN -->
-            <section class="policy-section" id="children">
-                <h2><span class="sec-num">6</span> Children's Privacy</h2>
-                <p>My Library Desk is designed and intended for use by students, library visitors, and workspace
-                    subscribers. It is not directed at children under the age of <strong>13</strong>. We do not
-                    intentionally or knowingly collect, store, or solicit personal information from minors. If you are a
-                    parent or guardian and believe that a child has submitted personal details to the App, please reach
-                    out to us immediately, and we will take swift action to purge such records from our databases.</p>
-            </section>
-
-            <!-- SECTION 7: CHANGES -->
-            <section class="policy-section" id="changes">
-                <h2><span class="sec-num">7</span> Changes to This Policy</h2>
-                <p>We reserve the right to revise or update this Privacy Policy at any time to reflect software changes,
-                    security enhancements, or legal standards. Whenever updates occur, we will post the revised document
-                    on this page and refresh the effective date at the top of the policy. We recommend that
-                    administrators and members review this page periodically to stay informed about how we safeguard
-                    information. Your continued use of the App following the publication of changes signifies your
-                    acknowledgment and acceptance of the revised clauses.</p>
-            </section>
-
-            <!-- SECTION 8: CONTACT -->
-            <section class="policy-section contact-section" id="contact">
-                <h2><span class="sec-num">8</span> Contact Us</h2>
-                <p>If you have any questions, feedback, concerns, or wish to submit a data request regarding this
-                    Privacy Policy, please reach out to our support channels:</p>
-                <div class="contact-row">
-                    <a href="mailto:adeptabhi.in@gmail.com" class="contact-btn" id="btn-email">
-                        <span>📧</span> adeptabhi.in@gmail.com
-                    </a>
-                    <a href="tel:8417800574" class="contact-btn" id="btn-phone">
-                        <span>📞</span> +91 8417800574
-                    </a>
-                </div>
-            </section>
+                <!-- SECTION 8 -->
+                <section id="contact" class="policy-section-doc">
+                    <h2>8. Contact Us</h2>
+                    <p>If you have any questions, feedback, concerns, or wish to submit a data request regarding this Privacy Policy, please reach out to our support channels:</p>
+                    <ul class="contact-links">
+                        <li><strong>Email support:</strong> <a href="mailto:adeptabhi.in@gmail.com">adeptabhi.in@gmail.com</a></li>
+                        <li><strong>Phone support:</strong> <a href="tel:8417800574">+91 8417800574</a></li>
+                    </ul>
+                </section>
+            </article>
 
         </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="container">
-            <img src="../assets/images/logo_white.png" alt="My Library Desk" class="footer-logo">
+        <div class="container footer-content">
             <p>&copy; 2025 My Library Desk. All rights reserved.</p>
-            <p class="footer-note">Last updated: July 1, 2025</p>
+            <div class="footer-links">
+                <a href="../privacy-policy/index.html">Privacy Policy</a>
+                <a href="../about-app/index.html">About App</a>
+            </div>
         </div>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
